@@ -1,0 +1,575 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.first {
+    width: 100%;
+    height: 100vh;
+    background-image: url("images/dog.jpeg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.navbar {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.logo i {
+    margin-right: 8px;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin: 0 18px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: .3s;
+}
+
+.nav-links a:hover {
+    color: #dcdcdc;
+}
+
+.btn-nav {
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+.content {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 80px;
+}
+
+.content h1 {
+    color: #fff;
+    font-size: 70px;
+    font-weight: 300;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.content p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 600px;
+    margin-bottom: 35px;
+}
+
+.products {
+    width: 90%;
+    margin: 50px auto;
+    border: 1px solid #ddd;
+    padding: 25px;
+}
+
+.productsheader {
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.productsheader h2 {
+    float: left;
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.search {
+    float: right;
+    width: 230px;
+    background: #f4f4f4;
+    border-radius: 30px;
+    padding: 12px 18px;
+}
+
+.search i {
+    color: gray;
+    margin-right: 8px;
+}
+
+.search input {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.kinds {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.kinds button {
+    border: none;
+    background: transparent;
+    padding: 12px 25px;
+    font-size: 18px;
+    color: #555;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.kinds button:hover {
+    background-color: #16284b;
+    color: white;
+    border-radius: 8px;
+}
+
+.products-container {
+    text-align: center;
+}
+
+.cards {
+    display: inline-block;
+    width: 31%;
+    margin: 0 0.8%;
+    vertical-align: top;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.cards img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(20, 26, 40, .65);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 0;
+    transition: .4s;
+}
+
+.cards:hover .overlay {
+    opacity: 1;
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    transform: translateY(-20px);
+    transition: .4s;
+}
+
+.card-top i {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.card-content {
+    color: white;
+    transform: translateY(30px);
+    transition: .4s;
+}
+
+.cards:hover .card-top,
+.cards:hover .card-content {
+    transform: translateY(0);
+}
+
+.card-content h3 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.card-buttons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.counter {
+    background: #16284b;
+    padding: 12px 18px;
+    border-radius: 8px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.counter button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.cart-btn {
+    background: #16284b;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.blog {
+    width: 90%;
+    margin: 80px auto;
+}
+
+.blog-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 40px;
+}
+
+.blog-title h2 {
+    font-size: 32px;
+}
+
+.blog-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
+}
+
+.blog-text {
+    width: 48%;
+}
+
+.blog-text h2 {
+    font-size: 42px;
+    margin-bottom: 30px;
+}
+
+.blog-text p {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.blog-text h3 {
+    margin-bottom: 15px;
+}
+
+.read-btn {
+    display: inline-block;
+    text-decoration: none;
+    background: #16284b;
+    color: white;
+    padding: 14px 25px;
+    border-radius: 6px;
+    margin-top: 15px;
+}
+
+.blog-image {
+    width: 48%;
+    position: relative;
+}
+
+.blog-image img {
+    width: 100%;
+    display: block;
+}
+
+.contact {
+    background: #07142e;
+    color: white;
+    padding: 70px 5%;
+}
+
+.contact-title {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+.contact-title h2 {
+    font-size: 40px;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.contact-form {
+    width: 48%;
+    background: white;
+    color: black;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+}
+
+.input-group {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.input-group textarea {
+    height: 120px;
+    resize: none;
+}
+
+.check {
+    margin-bottom: 20px;
+}
+
+.send-btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background: #16284b;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.contact-info {
+    width: 48%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.info-box i {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.info-box h3 {
+    margin-bottom: 10px;
+}
+
+.info-box p {
+    color: #cfcfcf;
+    margin-bottom: 10px;
+}
+
+.footer {
+    background: #07142e;
+    color: white;
+    padding: 60px 5% 30px;
+}
+
+.newsletter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, .15);
+    padding-top: 40px;
+}
+
+.newsletter p {
+    margin-top: 10px;
+    color: #ccc;
+}
+
+.subscribe {
+    display: flex;
+    gap: 10px;
+}
+
+.subscribe input {
+    width: 260px;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+}
+
+.subscribe button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    margin: 70px 0;
+}
+
+.footer-links h4 {
+    margin-bottom: 20px;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.footer-logo {
+    max-width: 250px;
+}
+
+.footer-logo p {
+    margin-top: 20px;
+    color: #ccc;
+    line-height: 1.7;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, .15);
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icons i {
+    margin-left: 18px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav-links,
+    .btn-nav {
+        display: none;
+    }
+
+    .navbar {
+        width: 95%;
+    }
+
+    .content {
+        width: 90%;
+        left: 20px;
+        top: 45%;
+    }
+
+    .content h1 {
+        font-size: 45px;
+    }
+
+    .content p {
+        font-size: 15px;
+    }
+
+    .productsheader h2,
+    .search {
+        float: none;
+    }
+
+    .search {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .kinds {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .kinds button {
+        margin: 0;
+    }
+
+    .cards {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .blog-content,
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .blog-text,
+    .blog-image,
+    .contact-form,
+    .contact-info {
+        width: 100%;
+    }
+
+    .contact-info {
+        grid-template-columns: 1fr;
+    }
+
+    .newsletter,
+    .footer-bottom,
+    .footer-links {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .subscribe {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .subscribe input {
+        width: 100%;
+    }
+}
