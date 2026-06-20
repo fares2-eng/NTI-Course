@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #efefef;
+  padding: 100px 20px;
+}
+
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 70px 60px;
+}
+
+.card {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  cursor: pointer;
+}
+
+.card-panel {
+  position: absolute;
+  inset: 0;
+  background: #ffffff;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 14px 20px;
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.card-panel h3 {
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #1b1b2f;
+  margin-bottom: 3px;
+}
+
+.card-panel p {
+  font-size: 12px;
+  line-height: 1.2;
+  color: #9c9c9c;
+}
+
+.card-photo {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  z-index: 2;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.photo-1 {
+  background-image: url('images/photo1.jpg');
+}
+
+.photo-2 {
+  background-image: url('images/photo2.jpg');
+}
+
+.photo-3 {
+  background-image: url('images/photo3.jpg');
+}
+
+.card:hover .card-photo {
+  transform: translate(-26px, -28px);
+}
+
+.card:hover .card-panel {
+  transform: translate(26px, 30px);
+}
