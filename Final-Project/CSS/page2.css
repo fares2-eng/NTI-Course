@@ -1,0 +1,601 @@
+.header-logo {
+    max-height: 40px;
+}
+
+
+.search-container { 
+    background-color: #ededed !important; 
+    width: 100%;
+    border: none;
+}
+
+.category-select {
+    font-size: 13px;
+    color: #111111;
+    cursor: pointer;
+}
+
+.search-input { 
+    outline: none !important;
+    box-shadow: none !important;
+    font-size: 14px;
+    width: 100%;
+}
+
+.search-btn { 
+    height: 38px;
+    align-items: center;
+}
+
+.lang-flag-img {
+    width: 16px;
+    height: 11px;
+    object-fit: cover;
+}
+
+.badge-count { 
+    top: -5px; 
+    right: -8px; 
+    font-size: 10px; 
+    font-weight: bold; 
+    width: 16px; 
+    height: 16px;
+    line-height: 16px; 
+    text-align: center; 
+}
+
+
+
+.currency-dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 10px !important;
+}
+.currency-dropdown:hover .currency-trigger,
+.currency-dropdown:hover .arrow-icon ,
+.lang-trigger:hover .lang-text,
+.lang-trigger:hover .arrow-icon {
+    color: red !important;
+}
+.currency-dropdown .dropdown-item:hover {
+    background-color: white;
+    color: red !important;
+}
+.categories-toggle-btn:hover,
+.top-right-actions a:hover,
+.user-icons a:hover i,
+.main-menu li a:hover,
+.main-navigation .recently:hover {
+    color: red !important;
+    cursor: pointer;
+}
+
+/* تنسيق القائمة الكبيرة (Mega Menu) والـ Sidebar يظل يعمل بشكل سليم تماماً */
+.merto-sidebar { 
+    width: 280px; 
+}
+.merto-sidebar .offcanvas-header { 
+    padding: 20px 24px !important; 
+}
+.merto-sidebar .btn-close { 
+    display: none !important; 
+}
+.sidebar-item { 
+    font-size: 14px; 
+    background-color: white; 
+    transition: all 0.2s ease; 
+}
+.sidebar-item:hover { 
+    background-color: white; 
+    color: red !important; 
+}
+.main-navigation { 
+    position: relative; 
+}
+.main-navigation .container { 
+    position: static !important; 
+}
+.has-mega-menu { 
+    position: static !important; 
+}
+.has-mega-menu .mega-menu { 
+    display: none; 
+    position: absolute; 
+    top: 100%; 
+    left: 0; 
+    right: 0; 
+    width: 100%; 
+    background-color: gray; 
+    padding: 40px 45px !important; 
+    z-index: 9999; 
+}
+.has-mega-menu:hover .mega-menu { 
+    display: block; 
+}
+.mega-item {
+    background-color: white !important; 
+    border: none !important;
+    border-radius: 8px; 
+    padding: 24px 20px 35px 20px !important; 
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05); 
+    text-align: center;
+    transition: box-shadow 0.2s ease;
+}
+.mega-item:hover { 
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.47) !important; 
+}
+
+/*-----------------------------------------------*/
+
+.mega-card-img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: contain; 
+    object-position: top center; 
+}
+.mega-menu h6 { 
+    font-size: 17px; 
+    font-weight: 700; 
+    color: black !important; 
+    margin-top: 30px; margin-bottom: 0; 
+}
+
+
+/* -------------------------------------------------------- */
+
+/* الـ Footer */
+.merto-footer {
+    background-color: black !important;
+    color: #9fa2a7 !important; 
+}
+.footer-title {
+    color: white !important; 
+    font-size: 14px; 
+    font-weight: 700; 
+    text-transform: uppercase; 
+    margin-bottom: 22px; 
+}
+.footer-links li {
+    margin-bottom: 12px; 
+}
+.footer-links li a {
+    color: #9fa2a7 !important; 
+    text-decoration: none; 
+    font-size: 14px; 
+    transition: color 0.2s ease; 
+}
+.footer-links li a:hover {
+    color: red !important; 
+}
+.merto-img {
+    width: 40%; 
+}
+.footer-contact-info p {
+    font-size: 13px; 
+    color: #9fa2a7; 
+}
+.footer-contact-info .footer-phone {
+    font-size: 20px; 
+    font-weight: 700; 
+    color: white !important; 
+    margin-top: 15px; 
+}
+.footer-newsletter .input-group {
+    border: 1px solid gray; 
+    border-radius: 4px; 
+    max-width: 320px; 
+}
+.footer-newsletter .input-group ::placeholder{
+    color: gray;
+}
+
+.footer-newsletter .form-control:focus {
+    box-shadow: none !important;
+}
+.footer-newsletter .form-control {
+    background-color: transparent !important; 
+    border: none !important; 
+    color: white !important; 
+    font-size: 14px; 
+    padding: 12px 15px; 
+}
+.footer-newsletter .btn-submit {
+    background-color: transparent; 
+    border: none; 
+    color: white; 
+    padding-right: 15px; 
+}
+.footer-newsletter .btn-submit:hover {
+    color: red; 
+}
+.footer-social-icons a {
+    color: white !important; 
+    font-size: 16px; 
+}
+.footer-social-icons a:hover {
+    color: red !important; 
+}
+
+.footer-help-bar {
+    border: 1px solid #2d3035; 
+    border-radius: 6px; 
+    padding: 24px 30px; 
+    margin-top: 40px; 
+    margin-bottom: 40px; 
+}
+.help-box-item {
+    display: flex; 
+    align-items: center; 
+}
+.help-box-item i {
+    font-size: 24px; 
+    color: white; 
+    margin-right: 15px; 
+}
+.help-box-item .help-text h5 {
+    font-size: 15px; 
+    font-weight: 600; 
+    color: white; 
+    margin: 0; 
+}
+.help-box-item .help-text a {
+    font-size: 13px; 
+    color: white !important; 
+    text-decoration: underline; 
+}
+.footer-bottom-bar {
+    padding-top: 25px; 
+    padding-bottom: 25px; 
+    font-size: 13px; 
+}
+.payment-cropped-img {
+    max-height: 28px; 
+    object-fit: contain; 
+    display: block; 
+}
+
+/* ================================================================================= */
+/* ================================================================================= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================================================================================= */
+/* 2. STYLES FOR MAIN SHOP CONTENT & ASIDE FILTER SYSTEM */
+/* ================================================================================= */
+.crumbs a {
+    text-decoration: none;
+    color: #111111;
+    font-size: 13px;
+}
+
+.shop-title {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.btn-cat {
+    display: inline-block;
+    padding: 8px 18px;
+    background-color: #f1f1f5;
+    color: #111111;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    border: 0;
+}
+
+.btn-cat.active,
+.btn-cat:hover {
+    background-color: #111111;
+    color: #ffffff;
+}
+
+.filter-title {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+    color: #111111;
+}
+
+.merto-filter-divider {
+    border: 0;
+    border-top: 1px solid #ebedf0;
+    opacity: 1;
+}
+
+/* --- نظام مربعات الألوان الجديد (Colors Section) --- */
+.merto-color-row-item {
+    position: relative;
+    display: block;
+    padding: 6px 0;
+    height: 32px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.merto-color-circle {
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 18px;
+}
+
+/* إخفاء علامة الصح تلقائياً داخل الدوائر */
+.merto-color-circle i {
+    font-size: 9px;
+    display: none;
+}
+
+
+/* تخصيص ألوان أيقونات الصح داخل المربعات الملونة لتظهر بوضوح عالي */
+.bg-black i, .bg-blue i, .bg-brown i, .bg-navy i, .bg-red i, .bg-green i { color: #ffffff; }
+.bg-gray i, .bg-light-brown i, .bg-orange i, .bg-pink i, .bg-white-border i { color: #111111; }
+
+/* درجات الألوان المحددة بالتصميم */
+.bg-black { background-color: #1c1d21; }
+.bg-blue { background-color: #74a2d6; }
+.bg-brown { background-color: #a36f4c; }
+.bg-gray { background-color: #e5e5e5; }
+.bg-green { background-color: #27b548; }
+.bg-light-brown { background-color: #e3d3be; }
+.bg-navy { background-color: #212a47; }
+.bg-orange { background-color: #ff9922; }
+.bg-pink { background-color: #ffcbd1; }
+.bg-red { background-color: #cc1818; }
+.bg-white-border { background-color: #ffffff; border: 1px solid #dcdcdc; }
+
+.merto-color-name {
+    font-size: 14px;
+    color: #111111;
+    margin-left: 28px;
+    float: left;
+    font-weight: 400;
+}
+
+.merto-color-count {
+    font-size: 13px;
+    color: #b5b5be;
+    float: right;
+}
+
+/* --- نظام المربعات العادية السوداء للـ Brands, Price, Size, Rating --- */
+.merto-custom-hover-item {
+    position: relative;
+    display: block;
+    padding: 6px 0;
+    height: 32px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.merto-aside-square-box {
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 16px;
+    height: 16px;
+    border: 2px solid black;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 8px;
+    transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+/* إخفاء الصح للمربعات العادية */
+.merto-aside-square-box i {
+    font-size: 7px;
+    color: white;
+    display: none;
+}
+
+/* تأثير الـ Hover المطلوب: يتحول البوكس لأسود وتظهر علامة الصح البيضاء */
+.merto-custom-hover-item:hover .merto-aside-square-box {
+    background-color: black;
+    border-color: black;
+}
+
+.merto-custom-hover-item:hover .merto-aside-square-box i {
+    display: inline-block;
+}
+
+.merto-aside-lbl-text {
+    font-size: 14px;
+    color: #111111;
+    margin-left: 28px;
+    float: left;
+}
+
+.merto-aside-count-num {
+    color: #b5b5be;
+    margin-left: 3px;
+}
+
+/* حقل البحث والمستندات بداخل الـ Aside */
+.merto-brand-search-wrapper .merto-aside-search-inp {
+    border: 2px solid #111111 !important;
+    border-radius: 6px !important;
+    padding: 8px 35px 8px 12px;
+    font-weight: 500;
+    color: #111111;
+    box-shadow: none !important;
+}
+
+.merto-brand-scroll-area {
+    max-height: 220px;
+    overflow-y: auto;
+    padding-right: 4px;
+}
+.merto-brand-scroll-area::-webkit-scrollbar {
+    width: 3px;
+}
+.merto-brand-scroll-area::-webkit-scrollbar-thumb {
+    background-color: #111111;
+    border-radius: 2px;
+}
+
+.merto-aside-price-inp {
+    border: 1px solid #111111 !important;
+    border-radius: 4px !important;
+    max-width: 72px;
+    height: 34px;
+}
+
+/* ================================================================================= */
+/* 3. GRID SYSTEM & PRODUCTS CARDS (HOVER & SHADOWS) */
+/* ================================================================================= */
+.main-grid-holder {
+    border-top: 1px solid #ebedf0;
+    border-left: 1px solid #ebedf0;
+}
+
+.card-grid-box {
+    border-bottom: 1px solid #ebedf0;
+    border-right: 1px solid #ebedf0;
+    position: relative;
+}
+
+.merto-prod-card {
+    padding: 24px;
+    background-color: #ffffff;
+    height: 100%;
+    position: relative;
+    transition: box-shadow 0.3s ease;
+    z-index: 1;
+}
+
+/* الـ Hover النظيف الشامل للمربع بالكامل لمنع الاهتزاز */
+.card-grid-box:hover {
+    z-index: 5;
+}
+.card-grid-box:hover .merto-prod-card {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    outline: 1px solid #111111;
+}
+
+.prod-tag {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #ff5533;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 3px 6px;
+    border-radius: 2px;
+    z-index: 3;
+}
+
+.prod-img-box {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+/* لوحة الأزرار المنزلقة جانبيًا بدقة */
+.side-actions-panel {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    width: 32px;
+    opacity: 0;
+    transform: translateY(-15px);
+    transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.3s ease;
+    z-index: 5;
+}
+
+.action-btn-item {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    background-color: #f1f1f5;
+    color: #111111;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 32px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.card-grid-box:hover .side-actions-panel {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.action-btn-item:hover {
+    background-color: #111111 !important;
+    color: #ffffff !important;
+}
+
+/* تولتيب (Tooltip) الكروت المطور */
+.merto-tip {
+    position: absolute;
+    right: 42px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 0 10px;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 3px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+    pointer-events: none;
+}
+.merto-tip::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    border-width: 4px;
+    border-style: solid;
+    border-color: transparent transparent transparent #000000;
+}
+.action-btn-item:hover .merto-tip {
+    opacity: 1;
+    visibility: visible;
+}
+
+.prod-name {
+    font-size: 13.5px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #111111;
+    margin-bottom: 6px;
+}
+.prod-price {
+    font-size: 14.5px;
+    font-weight: 700;
+}

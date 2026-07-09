@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoodie</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/common.css">
+    <link rel="stylesheet" href="CSS/hoddie.css">
+    <link rel="stylesheet" href="CSS/main.css">
+</head>
+<body>
+
+<nav class="merto-header bg-white">
+    <div class="top-header py-3 border-bottom">
+        <div class="container d-flex align-items-center justify-content-between">
+            
+            <div class="d-flex align-items-center header-left-box">
+                <a href="#" class="merto-brand text-dark text-decoration-none fw-bold fs-3 me-4">M<span class="merto-e">e</span>rto</a>
+                <div class="contact-box d-flex align-items-center">
+                    <i class="fa-solid fa-phone fs-4 text-dark me-2"></i>
+                    <div class="contact-text fs-7">
+                        <span class="text-secondary d-block" style="font-size: 11px; line-height: 1.2;">Contact us 24/7</span>
+                        <strong class="text-dark" style="font-size: 13px;">(+92) 3942 7879</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="search-wrapper px-2">
+                <div class="search-container rounded d-flex align-items-center">
+                    <div class="category-select px-3 py-2 border-end fs-7 text-dark fw-medium text-nowrap">
+                        All Categories <i class="fa-solid fa-chevron-down ms-1 fs-8"></i>
+                    </div>
+                    <input type="text" class="search-input flex-grow-1 px-3 py-2 border-0 bg-transparent fs-7" placeholder="Search for products">
+                    <button class="search-btn border-0 bg-dark text-white rounded-end d-flex align-items-center justify-content-center"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+
+            <div class="top-right-actions d-flex align-items-center fs-7 fw-medium text-dark text-nowrap">
+                <div class="me-4">
+                    <span class="me-3">
+                        <img src="images/icons/english-all.png" class="lang-flag-img me-1"> 
+                        English <i class="fa-solid fa-chevron-down ms-1 fs-8 text-secondary"></i>
+                    </span>
+                    
+                    <div class="dropdown d-inline-block currency-dropdown">
+                        <span class="currency-trigger text-dark" style="cursor: pointer;">
+                            USD <i class="fa-solid fa-chevron-down ms-1 fs-8 text-secondary arrow-icon"></i>
+                        </span>
+                        <ul class="dropdown-menu dropdown-menu-end shadow-sm border py-1 px-0 m-0 text-center" style="min-width: 90px;">
+                            <li><a class="dropdown-item py-2 px-3 fs-7 fw-medium text-dark" href="">EUR</a></li>
+                            <li><a class="dropdown-item py-2 px-3 fs-7 fw-medium text-dark" href="">BRL</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="me-4">
+                    <a href="#" class="text-dark text-decoration-none d-flex align-items-center"><i class="fa-regular fa-user me-1 fs-6 fw-bold"></i> Account</a>
+                </div>
+                <div class="d-flex align-items-center user-icons">
+                    <a href="#" class="text-dark text-decoration-none position-relative me-3">
+                        <i class="fa-regular fa-heart fs-5"></i>
+                        <span class="badge-count bg-danger text-white rounded-circle position-absolute">5</span>
+                    </a>
+                    <a href="#" class="text-dark text-decoration-none position-relative">
+                        <i class="fa-solid fa-bag-shopping fs-5"></i>
+                        <span class="badge-count bg-danger text-white rounded-circle position-absolute">9</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="main-navigation border-bottom">
+        <div class="container d-flex align-items-center justify-content-between">
+            
+            <div class="d-flex align-items-center">
+                <div class="border-end pe-4 py-2">
+                    <button class="categories-toggle-btn border-0 bg-transparent p-0 fw-bold text-uppercase fs-7 text-dark tracking-wide py-2" 
+                            type="button" 
+                            data-bs-toggle="offcanvas" 
+                            data-bs-target="#categoriesSidebar" 
+                            aria-controls="categoriesSidebar">
+                        <i class="fa-solid fa-bars me-2"></i> Shop By Categories
+                    </button>
+                </div>
+
+                <ul class="main-menu list-unstyled p-0 m-0 d-flex align-items-center py-3 ps-4">
+                    <li class="me-4 has-mega-menu">
+                        <a href="#" class="text-dark text-decoration-none fw-medium fs-6 pb-3">Homepages <i class="fa-solid fa-chevron-down ms-1 fs-8"></i></a>
+                        
+                        <div class="mega-menu">
+                            <div class="row g-4 m-0 mb-4">
+                                <div class="col-md-3">
+                                    <div class="mega-item">
+                                        <div class="mega-image-box">
+                                            <img src="images/icons/mega-home-1.jpg" alt="Supermarket 01" class="mega-card-img">
+                                        </div>
+                                        <h6>Supermarket 01</h6>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="mega-item">
+                                        <div class="mega-image-box">
+                                            <img src="images/icons/mega-home-2.jpg" alt="Supermarket 02" class="mega-card-img">
+                                        </div>
+                                        <h6>Supermarket 02</h6>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="mega-item">
+                                        <div class="mega-image-box">
+                                            <img src="images/icons/mega-home-3.jpg" alt="Furniture" class="mega-card-img">
+                                        </div>
+                                        <h6>Furniture</h6>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="mega-item">
+                                        <div class="mega-image-box">
+                                            <img src="images/icons/mega-home-4.jpg" alt="Electronic" class="mega-card-img">
+                                        </div>
+                                        <h6>Electronic</h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row g-4 m-0">
+                                <div class="col-md-3 offset-md-3">
+                                    <div class="mega-item">
+                                        <div class="mega-image-box">
+                                            <img src="images/icons/mega-home-5.jpg" alt="Autopart" class="mega-card-img">
+                                        </div>
+                                        <h6>Autopart</h6>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="mega-item">
+                                        <div class="mega-image-box">
+                                            <img src="images/icons/mega-home-6.jpg" alt="Cosmetics" class="mega-card-img">
+                                        </div>
+                                        <h6>Cosmetics</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="me-4"><a href="#" class="text-dark text-decoration-none fw-medium fs-6">Categories <i class="fa-solid fa-chevron-down ms-1 fs-8"></i></a></li>
+                    <li class="me-4"><a href="#" class="text-dark text-decoration-none fw-medium fs-6">Products <i class="fa-solid fa-chevron-down ms-1 fs-8"></i></a></li>
+                    <li class="me-4"><a href="#" class="text-dark text-decoration-none fw-medium fs-6">Pages <i class="fa-solid fa-chevron-down ms-1 fs-8"></i></a></li>
+                    <li class="me-4"><a href="#" class="text-dark text-decoration-none fw-medium fs-6">About us</a></li>
+                    <li class="me-4"><a href="#" class="text-dark text-decoration-none fw-medium fs-6">Blog</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none fw-medium fs-6"><i class="fa-solid fa-tag me-1"></i> Best Discount</a></li>
+                </ul>
+            </div>
+
+            <div class="py-3 fs-6 fw-medium text-dark text-nowrap">
+                Recently viewed <i class="fa-solid fa-chevron-down ms-1 fs-8"></i>
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+<div class="offcanvas offcanvas-start merto-sidebar" tabindex="-1" id="categoriesSidebar" aria-labelledby="categoriesSidebarLabel">
+    <div class="offcanvas-header bg-dark text-white py-3 px-3">
+        <h5 class="offcanvas-title fs-7 fw-bold text-uppercase tracking-wide" id="categoriesSidebarLabel">
+            <i class="fa-solid fa-bars me-2"></i> Shop By Categories
+        </h5>
+    </div>
+    <div class="offcanvas-body p-0">
+        <ul class="sidebar-menu-list list-unstyled m-0 p-0">
+            <li><a class="sidebar-item py-3 px-3 border-bottom d-block text-decoration-none text-dark clearfix" href="#"><i class="fa-solid fa-shirt float-start mt-1 me-3 text-secondary"></i> <span class="float-start fw-medium">Fashion</span> <i class="fa-solid fa-chevron-right float-end mt-1 fs-8 text-muted"></i></a></li>
+            <li><a class="sidebar-item py-3 px-3 border-bottom d-block text-decoration-none text-dark clearfix" href="#"><i class="fa-solid fa-mobile-screen float-start mt-1 me-3 text-secondary"></i> <span class="float-start fw-medium">Phone & Tablet</span> <i class="fa-solid fa-chevron-right float-end mt-1 fs-8 text-muted"></i></a></li>
+            <li><a class="sidebar-item py-3 px-3 border-bottom d-block text-decoration-none text-dark clearfix" href="#"><i class="fa-solid fa-laptop float-start mt-1 me-3 text-secondary"></i> <span class="float-start fw-medium">Laptop & Computer</span> <i class="fa-solid fa-chevron-right float-end mt-1 fs-8 text-muted"></i></a></li>
+            <li><a class="sidebar-item py-3 px-3 border-bottom d-block text-decoration-none text-dark clearfix" href="#"><i class="fa-solid fa-tv float-start mt-1 me-3 text-secondary"></i> <span class="float-start fw-medium">TV, Audio - Video</span> <i class="fa-solid fa-chevron-right float-end mt-1 fs-8 text-muted"></i></a></li>
+            <li><a class="sidebar-item py-3 px-3 border-bottom d-block text-decoration-none text-dark clearfix" href="#"><i class="fa-solid fa-camera float-start mt-1 me-3 text-secondary"></i> <span class="float-start fw-medium">Camera & Photo</span></a></li>
+            <li><a class="sidebar-item py-3 px-3 border-bottom d-block text-decoration-none text-dark clearfix" href="#"><i class="fa-solid fa-couch float-start mt-1 me-3 text-secondary"></i> <span class="float-start fw-medium">Home & Decor</span> <i class="fa-solid fa-chevron-right float-end mt-1 fs-8 text-muted"></i></a></li>
+            <li><a class="sidebar-item py-3 px-3 border-bottom d-block text-decoration-none text-dark clearfix" href="#"><i class="fa-solid fa-broom float-start mt-1 me-3 text-secondary"></i> <span class="float-start fw-medium">Beauty & Health</span> <i class="fa-solid fa-chevron-right float-end mt-1 fs-8 text-muted"></i></a></li>
+            <li><a class="sidebar-item py-3 px-3 border-bottom d-block text-decoration-none text-dark clearfix" href="#"><i class="fa-solid fa-gamepad float-start mt-1 me-3 text-secondary"></i> <span class="float-start fw-medium">Game Accessories</span></a></li>
+            <li><a class="sidebar-item py-3 px-3 border-bottom d-block text-decoration-none text-dark clearfix" href="#"><i class="fa-solid fa-car-side float-start mt-1 me-3 text-secondary"></i> <span class="float-start fw-medium">Autopart</span> <i class="fa-solid fa-chevron-right float-end mt-1 fs-8 text-muted"></i></a></li>
+        </ul>
+    </div>
+</div>
+
+
+<main class="product-page">
+    <div class="container">
+        <nav class="product-breadcrumb" aria-label="Breadcrumb">
+            <a href="#">Home</a>
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="#">Shop</a>
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="#">Fashion</a>
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="#">Men</a>
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="#">Accessories</a>
+            <i class="fa-solid fa-angle-right"></i>
+            <span>Athletics Embroidered Relaxed Hoodie</span>
+        </nav>
+
+        <section class="product-main">
+            <input class="gallery-radio" type="radio" name="hoodie-gallery" id="hoodie-1" checked>
+            <input class="gallery-radio" type="radio" name="hoodie-gallery" id="hoodie-2">
+            <input class="gallery-radio" type="radio" name="hoodie-gallery" id="hoodie-3">
+            <input class="gallery-radio" type="radio" name="hoodie-gallery" id="hoodie-4">
+
+            <div class="product-gallery">
+                <div class="product-thumbs" aria-label="Product thumbnails">
+                    <label class="thumb thumb-1" for="hoodie-1">
+                        <img src="images/hoodie/hoodie.jpg" alt="Athletics hoodie navy front">
+                    </label>
+                    <label class="thumb thumb-2" for="hoodie-2">
+                        <img src="images/hoodie/hoodie2.jpg" alt="Athletics hoodie grey front">
+                    </label>
+                    <label class="thumb thumb-3" for="hoodie-3">
+                        <img src="images/hoodie/hoodie3.jpg" alt="Athletics hoodie beige front">
+                    </label>
+                    <label class="thumb thumb-4" for="hoodie-4">
+                        <img src="images/hoodie/hoodie4.jpg" alt="Athletics hoodie black front">
+                    </label>
+                </div>
+
+                <div class="product-image-stage">
+                    <span class="sale-badge">-34%</span>
+                    <button class="zoom-btn" type="button" aria-label="Zoom product image">
+                        <i class="fa-solid fa-expand"></i>
+                    </button>
+                    <img src="images/hoodie/hoodie.jpg" alt="Athletics hoodie navy" class="main-product-img gallery-img gallery-img-1">
+                    <img src="images/hoodie/hoodie2.jpg" alt="Athletics hoodie grey" class="main-product-img gallery-img gallery-img-2">
+                    <img src="images/hoodie/hoodie3.jpg" alt="Athletics hoodie beige" class="main-product-img gallery-img gallery-img-3">
+                    <img src="images/hoodie/hoodie4.jpg" alt="Athletics hoodie black" class="main-product-img gallery-img gallery-img-4">
+                </div>
+            </div>
+
+            <div class="product-summary">
+                <div class="product-brand">Amazon</div>
+                <h1>Athletics Embroidered Relaxed Hoodie</h1>
+
+                <div class="product-rating">
+                    <span class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span>4.67 (3 Reviews)</span>
+                    <a href="#">Write a review</a>
+                </div>
+
+                <div class="product-price">
+                    <span class="new-price">$79 - $89</span>
+                </div>
+
+                <div class="stock-line">
+                    <span>In stock</span>
+                </div>
+
+                <div class="product-option">
+                    <div class="option-title">Color:</div>
+                    <div class="color-swatches">
+                        <label class="swatch-img swatch-1" for="hoodie-1">
+                            <img src="images/hoodie/hoodie.jpg" alt="Navy hoodie">
+                        </label>
+                        <label class="swatch-img swatch-2" for="hoodie-2">
+                            <img src="images/hoodie/hoodie2.jpg" alt="Grey hoodie">
+                        </label>
+                        <label class="swatch-img swatch-3" for="hoodie-3">
+                            <img src="images/hoodie/hoodie3.jpg" alt="Beige hoodie">
+                        </label>
+                        <label class="swatch-img swatch-4" for="hoodie-4">
+                            <img src="images/hoodie/hoodie4.jpg" alt="Black hoodie">
+                        </label>
+                    </div>
+                </div>
+
+                <div class="buy-row">
+                    <div class="quantity-box">
+                        <button type="button" aria-label="Decrease quantity">-</button>
+                        <input type="text" value="1" aria-label="Quantity">
+                        <button type="button" aria-label="Decrease quantity">+</button>
+                    </div>
+                    <button class="add-cart-btn" type="button">+ Add to cart</button>
+                    <button class="buy-now-btn" type="button">Buy now</button>
+                </div>
+
+                <div class="product-tools">
+                    <a href="#"><i class="fa-regular fa-heart"></i> Add to wishlist</a>
+                    <a href="#"><i class="fa-solid fa-code-compare"></i> Add to compare</a>
+                </div>
+
+                <div class="special-offer">
+                    <h3>Special offer</h3>
+                    <div class="offer-box">
+                        <div><i class="fa-regular fa-credit-card"></i><span>10% off, maximum $20 when paying with PAYPAL</span></div>
+                        <div><i class="fa-solid fa-certificate"></i><span>50% off or More iPad Cases, Covers & Keyboard Folios</span></div>
+                    </div>
+                </div>
+
+                <ul class="product-meta">
+                    <li><span>SKU:</span> <strong>8WWIHLKH5Y</strong></li>
+                    <li><span>Categories:</span> <strong>Accessories</strong></li>
+                </ul>
+
+                <div class="share-icons" aria-label="Share product">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-info-tabs">
+            <input class="tab-radio" type="radio" name="product-tabs" id="tab-description" checked>
+            <input class="tab-radio" type="radio" name="product-tabs" id="tab-specifications">
+            <div class="tabs-head">
+                <label for="tab-description" class="tab-label tab-description">Description</label>
+                <label for="tab-specifications" class="tab-label tab-specifications">Specifications</label>
+                <span class="tab-label decorative">Size Guide</span>
+                <span class="tab-label decorative">Reviews (3)</span>
+            </div>
+            <div class="tab-panel description-panel">
+                <div class="description-grid">
+                    <p>
+                        Compellingly grow performance based mindshare through parallel potentialities.
+                        Rapidiously underwhelm top-line catalysts for change before best-of-breed
+                        materials. Competently brand timely catalysts for change through sustainable
+                        systems. Completely expedite ubiquitous bandwidth after integrated action
+                        items. Progressively transform leading-edge supply chains whereas flexible
+                        niche markets.
+                    </p>
+                    <div class="info-table">
+                        <div><strong>Shipping</strong><span>We currently offer free shipping worldwide on all orders over $100.</span></div>
+                        <div><strong>Sizing</strong><span>Fits true to size. Do you need size advice?</span></div>
+                        <div><strong>Return & exchange</strong><span>If you are not satisfied with your purchase you can return it to us within 14 days for an exchange or refund.</span></div>
+                        <div><strong>Assistance</strong><span>Contact us on (+44) 555 88 65, or email us at support@themesky.com</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-panel specifications-panel">
+                <div class="info-table compact">
+                    <div><strong>Material</strong><span>80% cotton, 20% polyester fleece.</span></div>
+                    <div><strong>Fit</strong><span>Relaxed fit with dropped shoulders.</span></div>
+                    <div><strong>Care</strong><span>Machine wash cold, tumble dry low.</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="related-products">
+            <div class="section-heading">
+                <h2>Related products</h2>
+            </div>
+            <div class="related-grid owl-carousel">
+                <article class="related-card">
+                    <img src="images/page2/fashion-1-300x300.jpg" alt="Mens Winter Jacket Collar">
+                    <div class="card-actions">
+                        <button type="button" data-tip="Wishlist"><i class="fa-regular fa-heart"></i></button>
+                        <button type="button" data-tip="Compare"><i class="fa-solid fa-code-compare"></i></button>
+                        <button type="button" data-tip="Quick View"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <button type="button" data-tip="Add to cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                    <h3>Mens Winter Jacket Collar...</h3>
+                    <div class="related-price">$115</div>
+                </article>
+                <article class="related-card">
+                    <img src="images/page2/fashion-3-300x300.jpg" alt="Fashion jacket">
+                    <div class="card-actions">
+                        <button type="button" data-tip="Wishlist"><i class="fa-regular fa-heart"></i></button>
+                        <button type="button" data-tip="Compare"><i class="fa-solid fa-code-compare"></i></button>
+                        <button type="button" data-tip="Quick View"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <button type="button" data-tip="Add to cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                    <h3>Winter New Jacket Loose Retr...</h3>
+                    <div class="related-price">$160</div>
+                </article>
+                <article class="related-card">
+                    <img src="images/page2/fashion-4-300x300-1-300x300.jpg" alt="Fashion accessory">
+                    <div class="card-actions">
+                        <button type="button" data-tip="Wishlist"><i class="fa-regular fa-heart"></i></button>
+                        <button type="button" data-tip="Compare"><i class="fa-solid fa-code-compare"></i></button>
+                        <button type="button" data-tip="Quick View"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <button type="button" data-tip="Add to cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                    <h3>Smart Audio Glasses with Alex...</h3>
+                    <div class="related-price">$36</div>
+                </article>
+                <article class="related-card">
+                    <img src="images/page2/fashion-3-300x300.jpg" alt="Fashion sweater">
+                    <div class="card-actions">
+                        <button type="button" data-tip="Wishlist"><i class="fa-regular fa-heart"></i></button>
+                        <button type="button" data-tip="Compare"><i class="fa-solid fa-code-compare"></i></button>
+                        <button type="button" data-tip="Quick View"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <button type="button" data-tip="Add to cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                    <h3>Black Velvet Bow Trim Long...</h3>
+                    <div class="related-price">$1,250</div>
+                </article>
+                <article class="related-card">
+                    <img src="images/page2/fashion-4-300x300-1-300x300.jpg" alt="Fashion skirt">
+                    <div class="card-actions">
+                        <button type="button" data-tip="Wishlist"><i class="fa-regular fa-heart"></i></button>
+                        <button type="button" data-tip="Compare"><i class="fa-solid fa-code-compare"></i></button>
+                        <button type="button" data-tip="Quick View"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <button type="button" data-tip="Add to cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                    <h3>LV Women Leather Accent...</h3>
+                    <div class="related-price">$1,390</div>
+                </article>
+            </div>
+        </section>
+    </div>
+</main>
+
+
+<footer class="merto-footer pt-5 mt-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-contact-info">
+                    <a href="#" class="footer-brand mb-3">M<span class="merto-e">e</span>rto</a>
+                    <p class="mt-2"><i class="fa-solid fa-location-dot me-2"></i> 29 SE 2nd Ave, Miami<br><span class="ps-4">Florida 33131, United States</span></p>
+                    <p><i class="fa-regular fa-envelope me-2"></i> info@example.com</p>
+                    <h4 class="footer-phone">(+92) 3942 7879</h4>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-6 col-6">
+                <h6 class="footer-title">Shopping</h6>
+                <ul class="footer-links list-unstyled">
+                    <li><a href="#">Wishlist</a></li>
+                    <li><a href="#">Shop by Brand</a></li>
+                    <li><a href="#">Offers</a></li>
+                    <li><a href="#">Track order</a></li>
+                    <li><a href="#">Size Guide</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-6 col-6">
+                <h6 class="footer-title">Infomation</h6>
+                <ul class="footer-links list-unstyled">
+                    <li><a href="#">Track Order</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Gift Cards</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-6 col-6">
+                <h6 class="footer-title">Account</h6>
+                <ul class="footer-links list-unstyled">
+                    <li><a href="#">Cart</a></li>
+                    <li><a href="#">My account</a></li>
+                    <li><a href="#">My orders</a></li>
+                    <li><a href="#">Wishlist</a></li>
+                    <li><a href="#">Affiliate Program</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <h6 class="footer-title">Let's keep in touch</h6>
+                <div class="footer-newsletter mb-4">
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="enter your email address" aria-label="Email Address">
+                        <button class="btn-submit" type="button">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="footer-social-icons d-flex gap-4">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-help-bar">
+            <div class="row g-4 justify-content-between align-items-center">
+                <div class="col-md-4">
+                    <div class="help-box-item">
+                        <i class="fa-solid fa-phone-volume"></i>
+                        <div class="help-text">
+                            <h5>Didn't find what you were looking for?</h5>
+                            <a href="contact.html">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="help-box-item">
+                        <i class="fa-regular fa-face-smile"></i>
+                        <div class="help-text">
+                            <h5>How can we help you today?</h5>
+                            <a href="#">Help Center</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="help-box-item">
+                        <i class="fa-solid fa-life-ring"></i>
+                        <div class="help-text">
+                            <h5>We'd love to hear what you think!</h5>
+                            <a href="#">Give Feedback</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom-bar d-flex flex-wrap justify-content-between align-items-center">
+            <p class="m-0 text-secondary">Copyright © Merto. All Rights Reserved</p>
+            <div class="payment-gateways">
+                <img src="images/icons/payment-icons-1.png" alt="Payment Gateways Icons" class="img-fluid payment-cropped-img">
+            </div>
+        </div>
+    </div>
+</footer>
+<a href="#arrow" id="up" class="none text-decoration-none position-fixed px-3 py-3  fs-14  rounded-2 bg-black text-white d-flex justify-content-center align-items-center mb-1 me-1 end-0 bottom-0 "><i class="fa-solid fa-arrow-up"></i></a>
+
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="owl.carousel.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

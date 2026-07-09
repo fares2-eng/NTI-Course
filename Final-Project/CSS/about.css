@@ -1,0 +1,419 @@
+.header-logo {
+    max-height: 40px;
+}
+
+
+.search-container { 
+    background-color: #ededed !important; 
+    width: 100%;
+    border: none;
+}
+
+.category-select {
+    font-size: 13px;
+    color: #111111;
+    cursor: pointer;
+}
+
+.search-input { 
+    outline: none !important;
+    box-shadow: none !important;
+    font-size: 14px;
+    width: 100%;
+}
+
+.search-btn { 
+    height: 38px;
+    align-items: center;
+}
+
+.lang-flag-img {
+    width: 16px;
+    height: 11px;
+    object-fit: cover;
+}
+
+.badge-count { 
+    top: -5px; 
+    right: -8px; 
+    font-size: 10px; 
+    font-weight: bold; 
+    width: 16px; 
+    height: 16px;
+    line-height: 16px; 
+    text-align: center; 
+}
+
+
+
+
+
+
+.currency-dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 10px !important;
+}
+.currency-dropdown:hover .currency-trigger,
+.currency-dropdown:hover .arrow-icon ,
+.lang-trigger:hover .lang-text,
+.lang-trigger:hover .arrow-icon {
+    color: red !important;
+}
+.currency-dropdown .dropdown-item:hover {
+    background-color: white;
+    color: red !important;
+}
+.categories-toggle-btn:hover,
+.top-right-actions a:hover,
+.user-icons a:hover i,
+.main-menu li a:hover,
+.main-navigation .recently:hover {
+    color: red !important;
+    cursor: pointer;
+}
+
+
+
+/* تنسيق القائمة الكبيرة (Mega Menu) والـ Sidebar يظل يعمل بشكل سليم تماماً */
+.merto-sidebar { 
+    width: 280px; 
+}
+.merto-sidebar .offcanvas-header { 
+    padding: 20px 24px !important; 
+}
+.merto-sidebar .btn-close { 
+    display: none !important; 
+}
+.sidebar-item { 
+    font-size: 14px; 
+    background-color: white; 
+    transition: all 0.2s ease; 
+}
+.sidebar-item:hover { 
+    background-color: white; 
+    color: red !important; 
+}
+.main-navigation { 
+    position: relative; 
+}
+.main-navigation .container { 
+    position: static !important; 
+}
+.has-mega-menu { 
+    position: static !important; 
+}
+.has-mega-menu .mega-menu { 
+    display: none; 
+    position: absolute; 
+    top: 100%; 
+    left: 0; 
+    right: 0; 
+    width: 100%; 
+    background-color: gray; 
+    padding: 40px 45px !important; 
+    z-index: 9999; 
+}
+.has-mega-menu:hover .mega-menu { 
+    display: block; 
+}
+.mega-item {
+    background-color: white !important; 
+    border: none !important;
+    border-radius: 8px; 
+    padding: 24px 20px 35px 20px !important; 
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05); 
+    text-align: center;
+    transition: box-shadow 0.2s ease;
+}
+.mega-item:hover { 
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.47) !important; 
+}
+
+/*-----------------------------------------------*/
+
+.mega-card-img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: contain; 
+    object-position: top center; 
+}
+.mega-menu h6 { 
+    font-size: 17px; 
+    font-weight: 700; 
+    color: black !important; 
+    margin-top: 30px; margin-bottom: 0; 
+}
+
+
+/*-----------------------------------------------*/
+
+/*-------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 1. تنسيق قسم الأرقام */
+
+.stat-num-item h2 {
+    font-size: 48px;
+}
+
+
+
+
+.mission-wrapper {
+    border:2px solid black;
+    border-radius: 6px;
+}
+
+
+
+
+.merto-feature-box {
+    padding: 10px;
+}
+
+
+.features .container .icons{
+    max-width: 1100px;
+}
+
+.feature-icon-wrapper i {
+    font-size: 40px;
+    color: gray; 
+    transition: 0.25s;
+}
+
+.merto-feature-box h5 {
+    font-size: 15px;
+    transition: color 0.25s ease;
+}
+
+.merto-feature-box p {
+    font-size: 13px;
+    color: gray;
+    transition: color 0.25s ease;
+}
+
+.merto-feature-box:hover .feature-icon-wrapper i {
+    color: black; 
+}
+
+.merto-feature-box:hover h5 {
+    color: black;
+}
+
+
+/* بدايه السكشن الرابع */
+.stores-section-h2 {
+    font-size: 25px;
+}
+
+.merto-store-card {
+    background: transparent;
+}
+
+.store-image-container {
+    position: relative;
+}
+.store-image-container img {
+    width: 100%;
+}
+
+.image-overlay-filter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.merto-store-card:hover .image-overlay-filter {
+    background-color: rgba(235, 234, 234, 0.288);
+}
+
+.store-city {
+    font-size: 20px;
+    color: black;
+}
+
+.store-details {
+    font-size: 13px;
+    color: gray;
+}
+/*نهايه السكشن الرابع*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------*/
+
+
+
+/* الـ Footer */
+.merto-footer {
+    background-color: black !important;
+    color: #9fa2a7 !important; 
+}
+.footer-title {
+    color: white !important; 
+    font-size: 14px; 
+    font-weight: 700; 
+    text-transform: uppercase; 
+    margin-bottom: 22px; 
+}
+.footer-links li {
+    margin-bottom: 12px; 
+}
+.footer-links li a {
+    color: #9fa2a7 !important; 
+    text-decoration: none; 
+    font-size: 14px; 
+    transition: color 0.2s ease; 
+}
+.footer-links li a:hover {
+    color: red !important; 
+}
+.merto-img {
+    width: 40%; 
+}
+.footer-contact-info p {
+    font-size: 13px; 
+    color: #9fa2a7; 
+}
+.footer-contact-info .footer-phone {
+    font-size: 20px; 
+    font-weight: 700; 
+    color: white !important; 
+    margin-top: 15px; 
+}
+.footer-newsletter .input-group {
+    border: 1px solid gray; 
+    border-radius: 4px; 
+    max-width: 320px; 
+}
+.footer-newsletter .input-group ::placeholder{
+    color: gray;
+}
+
+.footer-newsletter .form-control:focus {
+    box-shadow: none !important;
+}
+.footer-newsletter .form-control {
+    background-color: transparent !important; 
+    border: none !important; 
+    color: white !important; 
+    font-size: 14px; 
+    padding: 12px 15px; 
+}
+.footer-newsletter .btn-submit {
+    background-color: transparent; 
+    border: none; 
+    color: white; 
+    padding-right: 15px; 
+}
+.footer-newsletter .btn-submit:hover {
+    color: red; 
+}
+.footer-social-icons a {
+    color: white !important; 
+    font-size: 16px; 
+}
+.footer-social-icons a:hover {
+    color: red !important; 
+}
+
+.footer-help-bar {
+    border: 1px solid #2d3035; 
+    border-radius: 6px; 
+    padding: 24px 30px; 
+    margin-top: 40px; 
+    margin-bottom: 40px; 
+}
+.help-box-item {
+    display: flex; 
+    align-items: center; 
+}
+.help-box-item i {
+    font-size: 24px; 
+    color: white; 
+    margin-right: 15px; 
+}
+.help-box-item .help-text h5 {
+    font-size: 15px; 
+    font-weight: 600; 
+    color: white; 
+    margin: 0; 
+}
+.help-box-item .help-text a {
+    font-size: 13px; 
+    color: white !important; 
+    text-decoration: underline; 
+}
+.footer-bottom-bar {
+    padding-top: 25px; 
+    padding-bottom: 25px; 
+    font-size: 13px; 
+}
+.payment-cropped-img {
+    max-height: 28px; 
+    object-fit: contain; 
+    display: block; 
+}
+
+
+/* =================================== */
+/* =================================== */
